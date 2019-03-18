@@ -32,6 +32,7 @@ if __name__ == "__main__":
         array = numpy.zeros((6, 7), dtype=int)
         x = 1
         dayz = space
+        print(dayz)
         for i in range(6):
             for j in range(space, 7):
                 if x <= days[month]:
@@ -45,15 +46,16 @@ if __name__ == "__main__":
         print("----")
         print("", months[month], "    ", year)
         print("------")
-        print("sun   mon   tue   wed   thu   fri   sat")
+        print("sun  mon  tue  wed  thu  fri  sat")
         print("")
+
 
         for i in range(5):
             for j in range(7):
                 if array[i][j] != 0:
-                    print(array[i][j], end="    ")
+                    print(array[i][j], end="   ")
                 else:
-                    print(end="    ")
+                    print(end="     ")
             print()
     except Exception as e:
         print(e)
